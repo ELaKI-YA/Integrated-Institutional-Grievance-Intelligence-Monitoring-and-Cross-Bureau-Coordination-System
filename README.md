@@ -127,58 +127,44 @@ flowchart TD
 
 ## Application screenshots
 
-<div align="center">
+<details>
+<summary><strong>🖼️ View all 10 application screenshots (click to expand / collapse)</strong></summary>
 
-<a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html"><img src="assets/gallery-stack.svg" alt="Open the gallery of 10 application screenshots" width="180" /></a>
+<p>Click the section heading above again to close and return to this position.</p>
 
-**[Click to explore all 10 application screenshots](https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html)**
+<p align="center"><strong>Complaint submission</strong></p>
+<p align="center"><img src="assets/screenshots/case-submission.png" alt="Complaint submission" width="440" /></p>
 
-<sub>One compact icon · Browse with arrows · Click to enlarge · Return to the README</sub>
+<p align="center"><strong>Officer workspace and case assignment</strong></p>
+<p align="center"><img src="assets/screenshots/officer-case-assignment.png" alt="Officer workspace and case assignment" width="440" /></p>
 
-</div>
+<p align="center"><strong>Officer communication</strong></p>
+<p align="center"><img src="assets/screenshots/officer-chat.png" alt="Officer communication" width="440" /></p>
 
-<h2>✦ Repository layout</h2>
+<p align="center"><strong>File attachments</strong></p>
+<p align="center"><img src="assets/screenshots/officer-chat-attachment.png" alt="File attachments" width="440" /></p>
 
-<p>The documentation and interactive architecture files are organized as follows:</p>
+<p align="center"><strong>Institution intelligence profile</strong></p>
+<p align="center"><img src="assets/screenshots/institution-profile.png" alt="Institution intelligence profile" width="440" /></p>
 
-<pre lang="text">repository/
-├── README.md
-├── assets/
-│   ├── banner.png
-│   ├── system-architecture.png
-│   ├── gallery-stack.svg
-│   └── screenshots/
-│       ├── ai-case-intelligence.png
-│       ├── case-submission.png
-│       ├── historical-reporting.png
-│       ├── historical-reporting-status.png
-│       ├── institution-profile.png
-│       ├── officer-case-assignment.png
-│       ├── officer-chat.png
-│       ├── officer-chat-attachment.png
-│       ├── relationship-graph-case.png
-│       └── relationship-graph-institution.png
-└── docs/
-    ├── index.html
-    ├── interactive-architecture.html
-    └── gallery.html</pre>
+<p align="center"><strong>Institution relationship network</strong></p>
+<p align="center"><img src="assets/screenshots/relationship-graph-institution.png" alt="Institution relationship network" width="440" /></p>
 
-<p><strong>Note:</strong> The tree shows documentation files only. Add <code>frontend/</code> and <code>backend/</code> when they are present in your repository.</p>
+<p align="center"><strong>Case relationship network</strong></p>
+<p align="center"><img src="assets/screenshots/relationship-graph-case.png" alt="Case relationship network" width="440" /></p>
 
-<h2>✦ Project details</h2>
+<p align="center"><strong>AI-assisted case intelligence</strong></p>
+<p align="center"><img src="assets/screenshots/ai-case-intelligence.png" alt="AI-assisted case intelligence" width="440" /></p>
 
-<table>
-<thead><tr><th align="left">Item</th><th align="left">Details</th></tr></thead>
-<tbody>
-<tr><td>Team</td><td><strong>CYBRIXX</strong></td></tr>
-<tr><td>Hackathon</td><td>Smart India Hackathon 2026</td></tr>
-<tr><td>Problem statement</td><td><strong>SIH26264</strong></td></tr>
-<tr><td>Screenshot gallery</td><td><a href="docs/gallery.html">View gallery HTML source</a></td></tr>
-<tr><td>Architecture source</td><td><a href="docs/index.html">View HTML file</a></td></tr>
-<tr><td>Live architecture</td><td><a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/">Open GitHub Pages</a></td></tr>
-<tr><td>Repository</td><td><a href="https://github.com/ELaKI-YA/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System">View GitHub repository</a></td></tr>
-</tbody>
-</table>
+<p align="center"><strong>Historical reporting</strong></p>
+<p align="center"><img src="assets/screenshots/historical-reporting.png" alt="Historical reporting" width="440" /></p>
+
+<p align="center"><strong>Historical reporting by status</strong></p>
+<p align="center"><img src="assets/screenshots/historical-reporting-status.png" alt="Historical reporting by status" width="440" /></p>
+
+</details>
+
+**[Open interactive screenshot gallery](https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html)** (requires GitHub Pages to be enabled).
 
 ## ✦ Responsible use
 
