@@ -10,7 +10,7 @@
 
 *One institution. One connected grievance history. Better-informed coordination.*
 
-[**Explore Architecture**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · 
+[**🌐 Interactive Architecture**](https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/) · [**System Diagram**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · [**Run Locally**](#-getting-started)
 
 </div>
 
@@ -33,9 +33,23 @@ Every complaint links to an institution using its **AICTE Permanent ID**. Office
 ## ✦ System architecture
 
 <div align="center">
-  <img src="assets/system-architecture.png" alt="Connected architecture showing users, React and Vite frontend, FastAPI backend, SQLite, NLP models, coordination rules, and application outputs" width="100%" />
-  <sub>Architecture concept · Outputs are rendered by React using FastAPI responses</sub>
+
+<a href="https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/">
+  <img src="assets/system-architecture.png" alt="Click to open the interactive AICTE technology architecture" width="100%" />
+</a>
+
+<br/>
+
+<a href="https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/">
+  <img src="https://img.shields.io/badge/OPEN-INTERACTIVE_TECHNOLOGY_ARCHITECTURE-362822?style=for-the-badge" alt="Open interactive technology architecture" />
+</a>
+
+<br/>
+<sub>Click the diagram or badge to explore the live HTML architecture, technology, features, purpose, and workflows.</sub>
+
 </div>
+
+> **Before publishing:** Replace `YOUR_USERNAME` and `YOUR_REPOSITORY` in the two links above and the banner navigation with your GitHub details. GitHub README pages cannot execute JavaScript directly; the interactive HTML opens via GitHub Pages. You can also [view the HTML source](docs/index.html).
 
 <details>
 <summary><b>Open the architecture explanation</b></summary>
@@ -181,7 +195,7 @@ AICTE-Grievance-Intelligence-System/
 │   ├── banner.png
 │   └── system-architecture.png
 ├── docs/
-│   └── interactive-architecture.html
+│   └── index.html               # GitHub Pages interactive architecture
 ├── frontend/                 # React + Vite application
 ├── backend/                  # FastAPI routes and case workflows
 ├── ai_engine/                # Similarity and overlap checks
@@ -214,7 +228,28 @@ npm run dev
 
 The first Sentence Transformers model load may require internet access to download model weights. Subsequent local inference can run offline when files are cached.
 
+## ✦ Demo & project details
 
+| Item | Details |
+|:---|:---|
+| **Live demo** | Add verified deployment URL |
+| **Interactive architecture** | [Open HTML source](docs/index.html) · [Live interactive page](https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/) |
+| **Team** | Add team name and member roles |
+| **Institution** | Add college name |
+| **SIH problem statement** | Add verified problem statement ID |
+| **Implementation status** | Update as features are completed and tested |
+
+## ✦ Publish the interactive HTML link (GitHub Pages)
+
+The interactive architecture is already included in **`docs/index.html`**. To make the diagram clickable for everyone—including PowerPoint viewers:
+
+1. Upload this repository, keeping `README.md`, `assets/`, and `docs/index.html` in their original locations.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch** → **main** → **/docs**, then **Save**.
+4. Once published, your URL will be `https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/`.
+5. Replace the placeholder URLs in this README with that actual URL. Paste the same URL into your PowerPoint.
+
+The published link has no preset expiration, but it depends on the GitHub Pages site remaining published and available.
 
 ## ✦ Responsible use
 
