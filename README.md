@@ -125,44 +125,7 @@ flowchart TD
 
 **Potential cross-bureau overlap:** Related RB and PGRC complaints → advisory flag → officer verification → documented coordination decision.
 
-## Application screenshots
 
-<details>
-<summary><strong>🖼️ View all 10 application screenshots (click to expand / collapse)</strong></summary>
-
-<p>Click the section heading above again to close and return to this position.</p>
-
-<p align="center"><strong>Complaint submission</strong></p>
-<p align="center"><img src="assets/screenshots/case-submission.png" alt="Complaint submission" width="440" /></p>
-
-<p align="center"><strong>Officer workspace and case assignment</strong></p>
-<p align="center"><img src="assets/screenshots/officer-case-assignment.png" alt="Officer workspace and case assignment" width="440" /></p>
-
-<p align="center"><strong>Officer communication</strong></p>
-<p align="center"><img src="assets/screenshots/officer-chat.png" alt="Officer communication" width="440" /></p>
-
-<p align="center"><strong>File attachments</strong></p>
-<p align="center"><img src="assets/screenshots/officer-chat-attachment.png" alt="File attachments" width="440" /></p>
-
-<p align="center"><strong>Institution intelligence profile</strong></p>
-<p align="center"><img src="assets/screenshots/institution-profile.png" alt="Institution intelligence profile" width="440" /></p>
-
-<p align="center"><strong>Institution relationship network</strong></p>
-<p align="center"><img src="assets/screenshots/relationship-graph-institution.png" alt="Institution relationship network" width="440" /></p>
-
-<p align="center"><strong>Case relationship network</strong></p>
-<p align="center"><img src="assets/screenshots/relationship-graph-case.png" alt="Case relationship network" width="440" /></p>
-
-<p align="center"><strong>AI-assisted case intelligence</strong></p>
-<p align="center"><img src="assets/screenshots/ai-case-intelligence.png" alt="AI-assisted case intelligence" width="440" /></p>
-
-<p align="center"><strong>Historical reporting</strong></p>
-<p align="center"><img src="assets/screenshots/historical-reporting.png" alt="Historical reporting" width="440" /></p>
-
-<p align="center"><strong>Historical reporting by status</strong></p>
-<p align="center"><img src="assets/screenshots/historical-reporting-status.png" alt="Historical reporting by status" width="440" /></p>
-
-</details>
 
 **[Open interactive screenshot gallery](https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html)** (requires GitHub Pages to be enabled).
 
