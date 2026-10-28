@@ -10,7 +10,7 @@
 
 *One institution. One connected grievance history. Better-informed coordination.*
 
-[**Explore Architecture**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · [**Run Locally**](#-getting-started)
+[**Explore Architecture**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · 
 
 </div>
 
