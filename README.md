@@ -1,756 +1,229 @@
+<div align="center">
 
-<p align="center">
-  <img src="assets/banner.png" alt="AICTE Grievance Intelligence System Banner" width="100%">
-</p>
+<img src="assets/banner.png" alt="AICTE Grievance Intelligence System" width="100%" />
 
-<h1 align="center">AICTE GRIEVANCE INTELLIGENCE SYSTEM</h1>
+<br/>
 
-<p align="center">
-  <strong>Integrated Institutional Grievance Intelligence, Monitoring and Cross-Bureau Coordination System</strong>
-</p>
+### Integrated Institutional Grievance Intelligence, Monitoring and Cross-Bureau Coordination System
 
-<p align="center">
-  Smart India Hackathon 2026 • AICTE • Artificial Intelligence • Institutional Monitoring • Cross-Bureau Coordination
-</p>
+**Smart India Hackathon 2026 · AICTE · Prototype**
 
----
+*One institution. One connected grievance history. Better-informed coordination.*
 
+[**Explore Architecture**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · [**Run Locally**](#-getting-started)
 
-
-# Table of Contents
-
-- Overview
-- Problem Statement
-- Project Objectives
-- Key Features
-- Technology Stack
-- Why Our Solution?
-- System Architecture
-- Project Modules
-- Artificial Intelligence and Machine Learning
-- System Workflows
-- Application Screenshots
-- Project Structure
-- Running Locally
-- Demonstration
-- Future Enhancements
-- Team 
-- License
+</div>
 
 ---
 
-# Overview
+## ✦ The idea
 
-The **AICTE Grievance Intelligence System** is an AI-assisted, institution-centric platform designed to support grievance monitoring, institutional analysis, and coordination between the **Regulation Bureau (RB)** and **Public Grievance Redressal Cell (PGRC)**.
+Institutional complaints are often easier to understand **together** than as isolated tickets. Our proposed platform brings student grievances, verified institution identities, officer assignments, and bureau workflows into one institution-centric workspace.
 
-The system connects complaints with verified institutional records using the **AICTE Permanent ID**.
+Every complaint links to an institution using its **AICTE Permanent ID**. Officers can explore the full complaint history, inspect potential duplicates, and receive advisory coordination alerts when related active cases may span the **Regulation Bureau (RB)** and **Public Grievance Redressal Cell (PGRC)**.
 
-It provides a centralized environment for student grievance submission, officer case management, institutional complaint history, AI-assisted similarity detection, cross-bureau alerts, and grievance analytics.
+> **Project scope:** An educational SIH prototype—not an official AICTE service. AI suggestions are reviewed by authorized officers; they do not automatically merge, escalate, or resolve cases.
 
-The platform is designed to help authorized officers identify related complaints, understand institutional grievance patterns, and coordinate case handling more effectively.
+## ✦ At a glance
 
----
+| Institution intelligence | Cross-bureau coordination | Human-in-the-loop AI |
+|:---|:---|:---|
+| One institution profile connects related cases, statuses, and officers. | Potential RB–PGRC overlap alerts help officers identify coordination needs. | SBERT-based similarity suggestions support—not replace—officer review. |
 
-# Problem Statement
+## ✦ System architecture
 
-Institutional grievances can involve multiple students, officers, and administrative bureaus.
+<div align="center">
+  <img src="assets/system-architecture.png" alt="Connected architecture showing users, React and Vite frontend, FastAPI backend, SQLite, NLP models, coordination rules, and application outputs" width="100%" />
+  <sub>Architecture concept · Outputs are rendered by React using FastAPI responses</sub>
+</div>
 
-When records are managed separately, it becomes difficult to:
+<details>
+<summary><b>Open the architecture explanation</b></summary>
 
-- Identify repeated complaints against the same institution.
-- Detect related grievances across RB and PGRC.
-- Access a consolidated institutional complaint history.
-- Monitor complaint progress and deadlines.
-- Coordinate actions between responsible officers.
-- Analyze recurring grievance patterns.
+**01 · Users** — Students submit and track complaints; officers review cases; institutions and administrators access permitted views.
 
-A centralized grievance intelligence platform can address these challenges through structured case management and AI-assisted analysis.
+**02 · Frontend** — React + Vite renders portals, dashboards, case pages, visualizations, and alerts.
 
----
+**03 · Backend** — FastAPI provides REST endpoints, validation, case workflows, and controlled data access.
 
-# Project Objectives
+**04 · Intelligence & data** — SQLite stores structured records. Sentence Transformers, TF-IDF, and cosine similarity provide complaint-matching signals. Python rules examine verified institution IDs and bureau assignments.
 
-The primary objectives are:
+**05 · Outputs** — Officer dashboards, institution profiles, relationship graphs, reports, and alerts appear in the React application.
 
-- Centralize institution-wise grievance records.
-- Connect complaints through verified AICTE Permanent IDs.
-- Identify potentially similar or duplicate complaints.
-- Detect possible RB–PGRC case overlaps.
-- Improve officer coordination and accountability.
-- Monitor grievance status and resolution deadlines.
-- Visualize institution–complaint–bureau–officer relationships.
-- Generate institutional grievance reports and analytics.
-- Maintain human oversight of AI-assisted suggestions.
+</details>
 
----
+## ✦ Platform modules
 
-# Key Features
+<details open>
+<summary><b>01 — Student grievance portal</b></summary>
 
-| Student Services | Officer Management | AI Intelligence |
-|------------------|--------------------|-----------------|
-| Complaint Submission | Officer Dashboard | Semantic Similarity |
-| Complaint Tracking | Case Assignment | Duplicate Suggestions |
-| Status Updates | Case Transfers | Cross-Bureau Alerts |
-| Institution Selection | Officer Remarks | Institution Matching |
-| Complaint History | SLA Monitoring | Recurring Case Patterns |
-| Supporting Details | Reports and Analytics | Priority Indicators |
+Students select an institution, submit complaint details, and follow status changes. Each submission is associated with an institution record for consistent tracking.
 
----
+</details>
 
-# Technology Stack
+<details>
+<summary><b>02 — Officer dashboard & case workspace</b></summary>
 
-| Category | Technology |
-|----------|------------|
-| Frontend | React.js, Vite |
-| Backend | Python, FastAPI |
-| Database | SQLite |
-| Machine Learning | Sentence Transformers, Scikit-learn |
-| Semantic Model | SBERT (`all-MiniLM-L6-v2`) |
-| Text Similarity | TF-IDF, Cosine Similarity |
-| Rule Engine | Python |
-| API Communication | REST API, JSON |
-| Security | Role-Based Access Control |
-| Version Control | Git, GitHub |
+Authorized officers review assigned grievances, inspect related cases, add remarks, update statuses, transfer or escalate work, and maintain a chronological action trail.
 
-The proposed stack uses free and open-source software. Cloud deployment may involve hosting costs.
+</details>
 
----
+<details>
+<summary><b>03 — Institution intelligence profile</b></summary>
 
-# Why Our Solution?
+A verified **AICTE Permanent ID** anchors institution metadata, complaint history, categories, bureau assignments, officers, and case status summaries.
 
-Traditional grievance management workflows may provide complaint registration and tracking without presenting a consolidated view of related institutional cases across administrative bureaus.
+</details>
 
-Our solution combines:
+<details>
+<summary><b>04 — RB–PGRC coordination alerts</b></summary>
 
-- Institution-centric grievance records.
-- AI-assisted semantic complaint matching.
-- Cross-bureau coordination alerts.
-- Centralized officer workspaces.
-- Relationship-based grievance visualization.
-- Deadline monitoring and reporting.
+Potentially related active cases involving the same institution across bureaus are flagged as **“Potential Overlapping Cases – Coordination Required.”** Authorized officers inspect the evidence and decide next steps.
 
-The platform emphasizes **human-reviewed AI intelligence** rather than automatic administrative decisions.
+</details>
 
----
+<details>
+<summary><b>05 — Relationship graph & reporting</b></summary>
 
-# System Architecture
+A visual network links **Institution → Complaint → Bureau → Officer**. Reporting views summarize case volumes, statuses, categories, regions, and deadlines.
 
-<p align="center">
-  <img src="assets/system-architecture.png" alt="AICTE System Architecture" width="95%">
-</p>
+</details>
 
-## Architecture Flow
+## ✦ AI-assisted intelligence
 
-```text
-                    SYSTEM USERS
-                         |
-        +----------------+----------------+
-        |                |                |
-     Students         Officers       Administrators
-        |                |                |
-        +----------------+----------------+
-                         |
-                    REACT + VITE
-                         |
-                    REST API / JSON
-                         |
-                    PYTHON FASTAPI
-                         |
-         +---------------+---------------+
-         |               |               |
-       SQLITE        AI / NLP        RULE ENGINE
-         |               |               |
-   Institution        SBERT          RB–PGRC
-   Records            TF-IDF         Overlap
-   Complaints         Cosine         Detection
-   Case History       Similarity     SLA Rules
-         |               |               |
-         +---------------+---------------+
-                         |
-                   API RESPONSES
-                         |
-                    REACT FRONTEND
-                         |
-          +--------------+--------------+
-          |              |              |
-       Officer       Institution    Relationship
-      Dashboard        Profile         Graph
-                         |
-                  Reports & Alerts
+The suggested model stack is **free and locally runnable** for a hackathon-scale prototype. These model choices are proposed architecture components; verify actual implementation before describing them as deployed.
+
+| Model / method | Role in grievance intelligence |
+|:---|:---|
+| **Sentence-BERT** · `all-MiniLM-L6-v2` | Create semantic complaint embeddings |
+| **TF-IDF** | Provide a keyword-based similarity baseline |
+| **Cosine similarity** | Score similarity between complaint representations |
+| **Python rules** | Check institution IDs, active-case status, and RB–PGRC overlaps |
+| **SLA rules** | Identify approaching or overdue case deadlines |
+
+```mermaid
+flowchart TD
+    A[New grievance] --> B[Validate AICTE Permanent ID]
+    B --> C[Retrieve institution-linked complaints]
+    C --> D[Normalize complaint text]
+    D --> E[SBERT embeddings / TF-IDF baseline]
+    E --> F[Cosine similarity scoring]
+    F --> G[RB–PGRC overlap rules]
+    G --> H[Advisory related-case alert]
+    H --> I[Authorized officer review]
+    I --> J[Decision and audit trail]
 ```
 
-The React frontend renders dashboards, reports, and alerts using information returned by FastAPI.
+**Example:** “The college has not returned my admission fee” and “I am waiting for my refund after cancelling admission” may be semantically related even though the wording differs. A suggested match is **not** an official duplicate decision.
 
----
+## ✦ Technology stack
 
-# Project Modules
+| Layer | Technology | Why it fits |
+|:---|:---|:---|
+| Interface | React.js + Vite | Responsive, component-based frontend |
+| API & workflows | Python + FastAPI | Typed REST endpoints and case logic |
+| Prototype storage | SQLite | Simple relational institution/case records |
+| NLP | Sentence Transformers | Local semantic embeddings |
+| Text baseline | Scikit-learn | TF-IDF and cosine similarity |
+| Coordination | Python rules | Transparent institution/bureau checks |
+| Authorization | Role-based access control | Access based on authorized responsibilities |
+
+## ✦ Demo journeys
 
 <details>
-<summary><b>1. Student Grievance Portal</b></summary>
+<summary><b>Journey A — Complaint to officer review</b></summary>
 
-### Features
-
-- Submit institutional complaints.
-- Select or identify the concerned institution.
-- Enter grievance descriptions.
-- Provide relevant supporting information.
-- Track complaint status.
-- View complaint updates.
-
-### Purpose
-
-Provide students with a structured interface for grievance registration and tracking.
+1. Student selects the institution and submits a grievance.
+2. FastAPI validates the submission and institution reference.
+3. SQLite stores the complaint and its institution relationship.
+4. NLP and rule checks generate advisory signals.
+5. An authorized officer reviews the case and records actions.
 
 </details>
 
----
-
 <details>
-<summary><b>2. Officer Dashboard</b></summary>
+<summary><b>Journey B — Potential cross-bureau overlap</b></summary>
 
-### Features
-
-- View assigned grievances.
-- Access institution-wise complaint records.
-- Review AI-assisted alerts.
-- Update complaint status.
-- Record officer remarks.
-- Transfer or escalate cases.
-- Monitor deadlines.
-
-### Purpose
-
-Support authorized officers in managing and coordinating grievance cases.
+1. An active RB complaint and an active PGRC complaint reference the same institution.
+2. Similarity analysis identifies a possible relationship.
+3. Coordination rules produce a **potential overlap** flag.
+4. Officers inspect both records; no automatic case merging occurs.
+5. Any coordination action is recorded in the case history.
 
 </details>
 
----
+## ✦ Application gallery
 
-<details>
-<summary><b>3. Institution Intelligence Profile</b></summary>
+> Replace the placeholders below with screenshots of completed features. Until then, these image references are intentionally commented out to avoid broken GitHub images.
 
-### Features
+<!--
+### Student portal
+![Student portal](assets/student-portal.png)
 
-- AICTE Permanent ID.
-- Institution details.
-- Associated complaints.
-- Complaint categories.
-- Bureau assignments.
-- Case statuses.
-- Institutional grievance history.
+### Officer workspace
+![Officer dashboard](assets/officer-dashboard.png)
 
-### Purpose
+### Institution profile
+![Institution profile](assets/institution-profile.png)
 
-Create a unified institution-centric view of grievance activity.
+### Relationship graph
+![Relationship graph](assets/relationship-graph.png)
 
-</details>
+### Cross-bureau alert
+![Cross-bureau alert](assets/cross-bureau-alert.png)
+-->
 
----
-
-<details>
-<summary><b>4. AI-Assisted Complaint Analysis</b></summary>
-
-### Technologies
-
-- SBERT
-- `all-MiniLM-L6-v2`
-- TF-IDF
-- Cosine Similarity
-- Python matching rules
-
-### Features
-
-- Semantic complaint comparison.
-- Keyword similarity analysis.
-- Potential duplicate suggestions.
-- Related complaint identification.
-- Institution-aware matching.
-
-### Purpose
-
-Help officers recognize related grievances even when complaint descriptions use different wording.
-
-</details>
-
----
-
-<details>
-<summary><b>5. Cross-Bureau Coordination</b></summary>
-
-### Features
-
-- Identify complaints associated with the same institution.
-- Check related active cases across RB and PGRC.
-- Generate potential overlap alerts.
-- Present linked case details for officer review.
-- Support coordination through officer workflows.
-
-### Alert Message
-
-**Potential Overlapping Cases – Coordination Required**
-
-### Purpose
-
-Improve visibility into cases that may require coordination between administrative bureaus.
-
-AI alerts do not automatically merge complaints or determine official outcomes.
-
-</details>
-
----
-
-<details>
-<summary><b>6. Relationship Graph</b></summary>
-
-### Relationships
-
-```text
-Institution
-    |
-    +--- Complaint A --- Regulation Bureau --- Officer A
-    |
-    +--- Complaint B --- PGRC --------------- Officer B
-    |
-    +--- Complaint C --- Regulation Bureau --- Officer C
-```
-
-### Purpose
-
-Visually connect institutions, complaints, bureaus, and officers to reveal related cases and grievance patterns.
-
-</details>
-
----
-
-<details>
-<summary><b>7. Reports and Analytics</b></summary>
-
-### Features
-
-- Institution-wise complaint analysis.
-- Bureau-wise grievance reports.
-- Regional grievance distribution.
-- Complaint status summaries.
-- Category-wise trends.
-- Deadline monitoring.
-- Recurring complaint indicators.
-
-### Purpose
-
-Support institutional monitoring and data-informed administrative review.
-
-</details>
-
----
-
-# Artificial Intelligence and Machine Learning
-
-The AI/ML module is designed to analyze grievance descriptions and identify potential relationships between complaints.
-
-## Models and Techniques
-
-| Model / Technique | Function |
-|-------------------|----------|
-| SBERT | Semantic complaint representation |
-| `all-MiniLM-L6-v2` | Pretrained sentence embeddings |
-| TF-IDF | Keyword-based text representation |
-| Cosine Similarity | Complaint similarity scoring |
-| Python Rules | Institution and cross-bureau matching |
-| SLA Rules | Deadline and priority indicators |
-
-## AI Processing Workflow
-
-```text
-             Student Complaint
-                    |
-                    v
-             Text Preprocessing
-                    |
-                    v
-          Institution ID Matching
-                    |
-                    v
-             Text Representation
-                    |
-          +---------+---------+
-          |                   |
-          v                   v
-     SBERT Model            TF-IDF
-          |                   |
-          +---------+---------+
-                    |
-                    v
-            Cosine Similarity
-                    |
-                    v
-          Potential Related Cases
-                    |
-                    v
-           RB–PGRC Rule Checking
-                    |
-                    v
-           Advisory Alert Results
-                    |
-                    v
-           Authorized Officer
-                 Review
-```
-
-## Example
-
-**Complaint A:**
-
-"The college has not returned my admission fee."
-
-**Complaint B:**
-
-"I am still waiting for my refund after cancelling admission."
-
-Although the complaints use different wording, semantic embeddings can help identify their potential relationship.
-
-The system presents possible matches for officer review.
-
-> Model selection, thresholds, and evaluation results must be verified during implementation. No specific detection accuracy is claimed here.
-
----
-
-# System Workflows
-
-<details>
-<summary><b>Student Complaint Workflow</b></summary>
-
-```text
-Student Login
-     |
-     v
-Select Institution
-     |
-     v
-Submit Complaint
-     |
-     v
-FastAPI Validation
-     |
-     v
-Store Complaint in SQLite
-     |
-     v
-AI-Assisted Analysis
-     |
-     v
-Officer Dashboard
-     |
-     v
-Complaint Status Updates
-```
-
-</details>
-
----
-
-<details>
-<summary><b>Cross-Bureau Coordination Workflow</b></summary>
-
-```text
-New Complaint
-     |
-     v
-Verify Institution ID
-     |
-     v
-Retrieve Existing Cases
-     |
-     v
-Compare Complaint Descriptions
-     |
-     v
-Check RB and PGRC Assignments
-     |
-     v
-Potential Overlap Found?
-     |
-     +------ No ------> Continue Normal Workflow
-     |
-    Yes
-     |
-     v
-Generate Advisory Alert
-     |
-     v
-Authorized Officer Review
-     |
-     v
-Record Coordination Decision
-```
-
-</details>
-
----
-
-<details>
-<summary><b>Officer Case Management Workflow</b></summary>
-
-```text
-Officer Dashboard
-     |
-     v
-Open Assigned Case
-     |
-     v
-View Institution Profile
-     |
-     v
-Review Related Complaints
-     |
-     v
-Inspect AI Suggestions
-     |
-     v
-Update / Transfer / Escalate
-     |
-     v
-Record Remarks and Audit Trail
-     |
-     v
-Refresh Dashboard and Reports
-```
-
-</details>
-
----
-
-# Application Screenshots
-
-## Student Grievance Portal
-
-<p align="center">
-  <img src="assets/student-portal.png" alt="Student Grievance Portal" width="90%">
-</p>
-
-## Officer Dashboard
-
-<p align="center">
-  <img src="assets/officer-dashboard.png" alt="Officer Dashboard" width="90%">
-</p>
-
-## Institution Intelligence Profile
-
-<p align="center">
-  <img src="assets/institution-profile.png" alt="Institution Profile" width="90%">
-</p>
-
-## Cross-Bureau Coordination Alert
-
-<p align="center">
-  <img src="assets/cross-bureau-alert.png" alt="Cross-Bureau Alert" width="90%">
-</p>
-
-## Relationship Graph
-
-<p align="center">
-  <img src="assets/relationship-graph.png" alt="Relationship Graph" width="90%">
-</p>
-
-> Add your actual screenshots to the `assets/` directory. Remove screenshot sections for interfaces that are not yet available.
-
----
-
-# Project Structure
+## ✦ Repository layout
 
 ```text
 AICTE-Grievance-Intelligence-System/
-|
 ├── assets/
 │   ├── banner.png
-│   ├── system-architecture.png
-│   ├── student-portal.png
-│   ├── officer-dashboard.png
-│   ├── institution-profile.png
-│   ├── cross-bureau-alert.png
-│   └── relationship-graph.png
-|
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── services/
-│   └── package.json
-|
-├── backend/
-│   ├── main.py
-│   ├── database.py
-│   ├── models.py
-│   └── routes/
-|
-├── ai_engine/
-│   ├── similarity.py
-│   ├── duplicate_detection.py
-│   └── overlap_detection.py
-|
+│   └── system-architecture.png
 ├── docs/
-│   └── architecture.html
-|
+│   └── interactive-architecture.html
+├── frontend/                 # React + Vite application
+├── backend/                  # FastAPI routes and case workflows
+├── ai_engine/                # Similarity and overlap checks
 ├── tests/
 ├── requirements.txt
-├── .gitignore
 ├── README.md
 └── LICENSE
 ```
 
-This is the intended repository structure. Adjust it to match the actual implementation.
+*The folders above describe the intended project layout; update them to match the final codebase.*
 
----
+## ✦ Getting started
 
-# Running Locally
-
-The following commands assume the repository follows the structure above.
-
-## Prerequisites
-
-- Python 3.10 or later
-- Node.js and npm
-- Git
-
-## Clone Repository
+> The commands below are a **setup template**, not verified run instructions. Confirm the entry points and dependencies once the application code is finalized.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
-```
-
-Replace the URL with your actual GitHub repository URL.
-
-## Backend Setup
-
-```bash
+# Backend
 python -m venv .venv
-```
-
-Activate the virtual environment, then install dependencies:
-
-```bash
+# Activate .venv for your operating system
 pip install -r requirements.txt
-```
-
-Start FastAPI:
-
-```bash
 uvicorn backend.main:app --reload
 ```
 
-Backend URL:
-
-```text
-http://127.0.0.1:8000
-```
-
-FastAPI API documentation:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-## Frontend Setup
-
-Open another terminal:
-
 ```bash
+# Frontend (in a separate terminal)
 cd frontend
 npm install
 npm run dev
 ```
 
-Open the local URL displayed by Vite.
+The first Sentence Transformers model load may require internet access to download model weights. Subsequent local inference can run offline when files are cached.
 
-> These are example setup commands. Verify them against the completed source code before submission.
 
----
 
-# Demonstration
+## ✦ Responsible use
 
-## Scenario 1: Student Complaint Submission
-
-A student submits a grievance associated with a specific institution.
-
-**Expected demonstration:**
-
-- The complaint is received by the backend.
-- The institution reference is validated.
-- The complaint is stored.
-- The complaint becomes visible in the authorized officer workflow.
-
-## Scenario 2: Similar Complaint Detection
-
-Two complaints describe a related issue using different wording.
-
-**Expected demonstration:**
-
-- The AI module compares the descriptions.
-- A similarity score is calculated.
-- Potentially related complaints are suggested.
-- An officer reviews the suggestion.
-
-## Scenario 3: RB–PGRC Coordination
-
-Related active complaints concerning the same institution are associated with different bureaus.
-
-**Expected demonstration:**
-
-- The system identifies a potential overlap.
-- An advisory coordination alert is generated.
-- Authorized officers inspect the related cases.
-- Any coordination decision is recorded.
-
-## Scenario 4: Institution Monitoring
-
-An officer opens an institution profile.
-
-**Expected demonstration:**
-
-- Associated complaints are displayed.
-- Case statuses and bureau assignments are visible.
-- Related records can be explored through the relationship graph.
+Student grievances may contain sensitive personal information. Do not commit real complaints, credentials, or private institution records to a public repository. Use synthetic demo records and enforce permissions in the backend. Model scores are advisory; accuracy and thresholds should be evaluated before operational use.
 
 ---
 
-# Future Enhancements
-
-Potential future improvements include:
-
-- Multilingual grievance analysis.
-- Advanced institutional trend detection.
-- Expanded reporting and visualization.
-- Scalable production database infrastructure.
-- Integration with authorized grievance platforms.
-- Enhanced accessibility and mobile responsiveness.
-
----
-
-
-**Team Name:** CYBRIXX
-
-
-
----
-
-# License
-
-Add the repository's chosen license here after selecting and including the appropriate `LICENSE` file.
-
----
-
-# Disclaimer
-
-This project is developed for educational and hackathon purposes.
-
-It is not an official AICTE platform and does not imply authorization, endorsement, or deployment by AICTE.
-
----
-
-<p align="center">
-  <strong>AICTE GRIEVANCE INTELLIGENCE SYSTEM</strong>
-</p>
-
-<p align="center">
-  <i>Institutional Intelligence • Transparent Monitoring • Coordinated Grievance Resolution</i>
-</p>
+<div align="center">
+  <b>AICTE GRIEVANCE INTELLIGENCE SYSTEM</b><br/>
+  <sub>Institutional visibility · Connected workflows · Responsible AI</sub><br/><br/>
+  <sub>Smart India Hackathon 2026 · Educational prototype · Not affiliated with or endorsed by AICTE</sub>
+</div>
