@@ -36,7 +36,6 @@ Complaints can be linked using an **AICTE Permanent ID**; official verification 
 
 </div>
 
-The live link requires **GitHub Settings → Pages → Deploy from a branch → main → /docs** and an actual `docs/index.html` file committed to the `main` branch. You can also [view the HTML source](docs/index.html). GitHub README pages cannot execute interactive JavaScript.
 
 <details>
 <summary><b>Architecture explanation</b></summary>
