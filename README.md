@@ -10,7 +10,7 @@
 
 *One institution. One connected grievance history. Better-informed coordination.*
 
-[**🌐 Interactive Architecture**](https://https://github.com/ELaKI-YA/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System) · [**System Diagram**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · [**Run Locally**](#-getting-started)
+[**🌐 Interactive Architecture**]([**GitHub Repository**](https://github.com/ELaKI-YA/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System) · [**System Diagram**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · [**Run Locally**](#-getting-started)
 
 </div>
 
@@ -205,51 +205,21 @@ AICTE-Grievance-Intelligence-System/
 └── LICENSE
 ```
 
-*The folders above describe the intended project layout; update them to match the final codebase.*
 
-## ✦ Getting started
 
-> The commands below are a **setup template**, not verified run instructions. Confirm the entry points and dependencies once the application code is finalized.
-
-```bash
-# Backend
-python -m venv .venv
-# Activate .venv for your operating system
-pip install -r requirements.txt
-uvicorn backend.main:app --reload
-```
-
-```bash
-# Frontend (in a separate terminal)
-cd frontend
-npm install
-npm run dev
-```
 
 The first Sentence Transformers model load may require internet access to download model weights. Subsequent local inference can run offline when files are cached.
 
-## ✦ Demo & project details
+## ✦ Details
 
 | Item | Details |
 |:---|:---|
-| **Live demo** | Add verified deployment URL |
+
 | **Interactive architecture** | [Open HTML source](docs/index.html) · [Live interactive page](https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/) |
-| **Team** | Add team name and member roles |
-| **Institution** | Add college name |
-| **SIH problem statement** | Add verified problem statement ID |
-| **Implementation status** | Update as features are completed and tested |
+| **Team** |CYBRIXX |
+| **SIH problem statement** | SIH26264 |
 
-## ✦ Publish the interactive HTML link (GitHub Pages)
 
-The interactive architecture is already included in **`docs/index.html`**. To make the diagram clickable for everyone—including PowerPoint viewers:
-
-1. Upload this repository, keeping `README.md`, `assets/`, and `docs/index.html` in their original locations.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch** → **main** → **/docs**, then **Save**.
-4. Once published, your URL will be `https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/`.
-5. Replace the placeholder URLs in this README with that actual URL. Paste the same URL into your PowerPoint.
-
-The published link has no preset expiration, but it depends on the GitHub Pages site remaining published and available.
 
 ## ✦ Responsible use
 
