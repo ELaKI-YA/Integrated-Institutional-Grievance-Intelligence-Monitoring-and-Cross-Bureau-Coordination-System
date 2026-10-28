@@ -128,7 +128,7 @@ flowchart TD
 ## Application screenshots
 
 <details>
-<summary><strong>🖼️ View all 10 application screenshots (click to expand / collapse)</strong></summary>
+<summary><strong>View all 10 application screenshots (click to expand / collapse)</strong></summary>
 
 <p>Click the section heading above again to close and return to this position.</p>
 
