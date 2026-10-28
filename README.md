@@ -10,7 +10,7 @@
 
 *One institution. One connected grievance history. Better-informed coordination.*
 
-[**🌐 Interactive Architecture**]([**GitHub Repository**](https://github.com/ELaKI-YA/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System) · [**System Diagram**](#-system-architecture) · [**Explore Modules**](#-platform-modules) · [**AI Engine**](#-ai-assisted-intelligence) · [**Run Locally**](#-getting-started)
+
 
 </div>
 
