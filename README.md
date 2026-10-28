@@ -167,25 +167,38 @@ flowchart TD
 </details>
 
 ## ✦ Application gallery
+## ✦ Application Screenshots
 
-> Replace the placeholders below with screenshots of completed features. Until then, these image references are intentionally commented out to avoid broken GitHub images.
+Explore the implemented interface and core grievance-management workflows.
 
-<!--
-### Student portal
-![Student portal](assets/student-portal.png)
+### Complaint Submission
+![Complaint successfully submitted with tracking ID](assets/screenshots/case-submission.png)
 
-### Officer workspace
-![Officer dashboard](assets/officer-dashboard.png)
+### Officer Workspace and Case Assignment
+![Officer case assignment and investigation workspace](assets/screenshots/officer-case-assignment.png)
 
-### Institution profile
-![Institution profile](assets/institution-profile.png)
+### Officer Communication
+![Officer-to-officer chat workspace](assets/screenshots/officer-chat.png)
 
-### Relationship graph
-![Relationship graph](assets/relationship-graph.png)
+### File Attachments
+![Officer chat attachment and download](assets/screenshots/officer-chat-attachment.png)
 
-### Cross-bureau alert
-![Cross-bureau alert](assets/cross-bureau-alert.png)
--->
+### Institution Intelligence Profile
+![College image, institution details, complaint counts and categories](assets/screenshots/institution-profile.png)
+
+### Complaint Relationship Network
+![Institution, complaint category, case and officer relationship graph](assets/screenshots/relationship-graph-institution.png)
+
+![Selected complaint and investigation timeline in relationship graph](assets/screenshots/relationship-graph-case.png)
+
+### AI-Assisted Case Intelligence
+![Rule-based category suggestion and potential duplicate detection](assets/screenshots/ai-case-intelligence.png)
+
+### Historical Complaint Reporting
+![Historical complaint counts by year, month, category and status](assets/screenshots/historical-reporting.png)
+
+![Historical reporting with multiple case statuses](assets/screenshots/historical-reporting-status.png)
+
 
 ## ✦ Repository layout
 
