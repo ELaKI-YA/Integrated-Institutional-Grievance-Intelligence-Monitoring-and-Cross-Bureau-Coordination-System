@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <img src="assets/banner.png" alt="AICTE Grievance Intelligence System" width="780" />
@@ -24,19 +23,17 @@ Complaints can be linked using an **AICTE Permanent ID**; official verification 
 |:---|:---|:---|
 | One institution profile links cases, statuses, and officers. | Potential RB–PGRC overlap alerts highlight coordination needs. | Advisory category and related-case suggestions support officer review. |
 
-## ✦ System architecture
+## ✦ Interactive architecture & application gallery
 
 <div align="center">
 
-<a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/">
-  <img src="assets/system-architecture.png" alt="Interactive technology architecture preview" width="680" />
+<a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/" title="Explore the interactive architecture and screenshot gallery">
+  <img src="assets/system-architecture.png" alt="Open interactive architecture and animated application gallery" width="680" />
 </a>
 
-<p><a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/"><strong>Open interactive technology architecture</strong></a></p>
+
 
 </div>
-
-The live link requires **GitHub Settings → Pages → Deploy from a branch → main → /docs** and an actual `docs/index.html` file committed to the `main` branch. You can also [view the HTML source](docs/index.html). GitHub README pages cannot execute interactive JavaScript.
 
 <details>
 <summary><b>Architecture explanation</b></summary>
@@ -127,17 +124,14 @@ flowchart TD
 
 **Potential cross-bureau overlap:** Related RB and PGRC complaints → advisory flag → officer verification → documented coordination decision.
 
-## Application screenshots
+## ✦ Application screenshots
 
-<p align="center">
-  <a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html">
-    <img src="assets/stacked-gallery-preview.png" alt="Overlapping preview of 10 original application screenshots — click to open the animated gallery" width="780" />
-  </a>
-</p>
+<div align="center">
+<a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/#screenshots">
+<img src="assets/stacked-gallery-preview.png" alt="Application screenshot gallery" width="680" />
+</a>
+</div>
 
-<p align="center"><a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html"><strong>Open interactive screenshot gallery</strong></a></p>
-
-<p align="center"><sub>10 overlapping screenshots · Auto-advances every 5 seconds · Hover to select · Click to enlarge</sub></p>
 
 ## ✦ Responsible use
 
