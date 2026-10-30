@@ -4,9 +4,8 @@
 
 <h1>Integrated Institutional Grievance Intelligence, Monitoring and Cross-Bureau Coordination System</h1>
 
-**Smart India Hackathon 2026 · AICTE · Prototype**
-
-*One institution. One connected grievance history. Better-informed coordination.*
+<p><strong>Smart India Hackathon 2026 · AICTE · Prototype</strong></p>
+<p><em>One institution. One connected grievance history. Better-informed coordination.</em></p>
 
 </div>
 
@@ -32,19 +31,22 @@ Complaints can be linked using an **AICTE Permanent ID**; official verification 
   <img src="assets/system-architecture.png" alt="Interactive technology architecture preview" width="680" />
 </a>
 
-**[Open interactive technology architecture](https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/)**
+<p><a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/"><strong>Open interactive technology architecture</strong></a></p>
 
 </div>
 
+The live link requires **GitHub Settings → Pages → Deploy from a branch → main → /docs** and an actual `docs/index.html` file committed to the `main` branch. You can also [view the HTML source](docs/index.html). GitHub README pages cannot execute interactive JavaScript.
 
 <details>
 <summary><b>Architecture explanation</b></summary>
 
-1. **Users:** Students, officers, institutions, and administrators.
-2. **Frontend:** React + Vite for forms, dashboards, case views, and graphs.
-3. **Backend:** Python + FastAPI for endpoints and workflows.
-4. **Intelligence & data:** SQLite and rule-based complaint checks; SBERT and TF-IDF are proposed enhancements.
-5. **Outputs:** Officer workspace, institution profiles, relationship graphs, reports, and alerts.
+<ol>
+<li><strong>Users:</strong> Students, officers, institutions, and administrators.</li>
+<li><strong>Frontend:</strong> React + Vite for forms, dashboards, case views, and graphs.</li>
+<li><strong>Backend:</strong> Python + FastAPI for endpoints and workflows.</li>
+<li><strong>Intelligence &amp; data:</strong> SQLite and rule-based complaint checks; SBERT and TF-IDF are proposed enhancements.</li>
+<li><strong>Outputs:</strong> Officer workspace, institution profiles, relationship graphs, reports, and alerts.</li>
+</ol>
 
 </details>
 
@@ -127,7 +129,7 @@ flowchart TD
 ## Application screenshots
 
 <details>
-<summary><strong>View all 10 application screenshots (click to expand / collapse)</strong></summary>
+<summary><strong>🖼️ View all 10 application screenshots (click to expand / collapse)</strong></summary>
 
 <p>Click the section heading above again to close and return to this position.</p>
 
@@ -163,7 +165,9 @@ flowchart TD
 
 </details>
 
-**[Open interactive screenshot gallery](https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html)** (requires GitHub Pages to be enabled).
+<p align="center"><a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/gallery.html"><strong>Open interactive screenshot gallery</strong></a></p>
+
+<p align="center"><sub>Auto-plays every 5 seconds · Hover to select a screenshot · Requires GitHub Pages</sub></p>
 
 ## ✦ Responsible use
 
@@ -173,9 +177,8 @@ Student grievances may contain sensitive personal information. Do not commit rea
 
 <div align="center">
 
-**AICTE GRIEVANCE INTELLIGENCE SYSTEM**
-
-*Institutional visibility · Connected workflows · Responsible AI*
+<p><strong>AICTE GRIEVANCE INTELLIGENCE SYSTEM</strong></p>
+<p><em>Institutional visibility · Connected workflows · Responsible AI</em></p>
 
 <sub>Smart India Hackathon 2026 · Educational prototype · Not affiliated with or endorsed by AICTE</sub>
 
