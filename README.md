@@ -1,8 +1,8 @@
+# AICTE Integrated Institutional Grievance Intelligence, Monitoring & Cross-Bureau Coordination System
+
 <div align="center">
   <img src="assets/aicte-banner.png" alt="Every Case Deserves to Be Heard" width="100%" />
 </div>
-
-# AICTE Integrated Institutional Grievance Intelligence, Monitoring & Cross-Bureau Coordination System
 
 <div align="center">
 
@@ -37,16 +37,19 @@ Institutional grievances about certificates, fees, salaries and approvals can be
 ## Updated Interface Screenshots
 
 ### Cases Dashboard
+
 Incoming grievances, institution names, complaint identifiers and current statuses.
 
 ![Cases Dashboard](assets/screenshots/cases-dashboard.png)
 
 ### Historical Complaint Reporting
+
 Year, month and category filters, complaint totals and reporting charts.
 
 ![Historical Complaint Reporting](assets/screenshots/historical-reporting.png)
 
 ### Connected Case Graph
+
 Relationship network of institutions, categories, individual complaints and officers, alongside an institution information panel.
 
 ![Connected Case Graph](assets/screenshots/connected-case-graph.png)
@@ -54,22 +57,28 @@ Relationship network of institutions, categories, individual complaints and offi
 ## Animated Feature Demonstrations
 
 ### 1. Officer Private Chat
-![Officer Private Chat](assets/gifs/demo-01.gif)
+
+<img src="assets/gifs/demo-01.gif" alt="Officer Private Chat" width="100%" />
 
 ### 2. Case Details and AI Case Intelligence
+
 <img src="assets/gifs/demo-02.gif" alt="Case Details and AI Intelligence" width="100%" />
 
 ### 3. Historical Complaint Reporting
-<img src="assets/gifs/demo-03.gif" alt="Historical Complaint Reporting Demo" width="100%" />
+
+<img src="assets/gifs/demo-03.gif" alt="Historical Complaint Reporting" width="100%" />
 
 ### 4. Connected Case Graph and Officer Workspace
-<img src="assets/gifs/demo-04.gif" alt="Connected Case Graph Demo" width="100%" />
+
+<img src="assets/gifs/demo-04.gif" alt="Connected Case Graph" width="100%" />
 
 ### 5. Case Assignment and Officer Collaboration
-<img src="assets/gifs/demo-05.gif" alt="Case Assignment Demo" width="100%" />
+
+<img src="assets/gifs/demo-05.gif" alt="Case Assignment" width="100%" />
 
 ### 6. Complaint Relationship Network
-<img src="assets/gifs/demo-06.gif" alt="Complaint Relationship Network Demo" width="100%" />
+
+<img src="assets/gifs/demo-06.gif" alt="Complaint Relationship Network" width="100%" />
 
 *GIFs are compressed recordings of the prototype interface. Some small text may be less readable in the animations.*
 
@@ -124,9 +133,14 @@ The reporting interface summarizes saved complaints using **year**, **month**, *
 | Styling | CSS |
 | Backend | Python + FastAPI |
 | Database | SQLite |
+| Machine Learning | Python, Scikit-learn |
+| Natural Language Processing (NLP) | TF-IDF, Cosine Similarity |
+| AI Intelligence | Complaint classification, similar grievance detection, complaint clustering and severity assessment |
 | Communication | REST APIs |
-| Intelligence | Rule-based classification / similarity logic; advanced semantic matching proposed |
-| Visualization | Interactive relationship graph |
+| Visualization | Interactive Connected Case Graph |
+| Development Tools | Git, GitHub, VS Code |
+
+**ML Integration:** The proposed Machine Learning module analyzes complaint descriptions to identify related grievances, support automatic classification, and assist officers in prioritizing cases. The six-complaint severity threshold is rule-based, while NLP can help determine whether complaints describe similar issues.
 
 ## Architecture
 
@@ -167,33 +181,6 @@ Review Related Cases / Coordinate
       ↓
 Update Status / Resolve
 ```
-
-## Installation and Local Setup
-
-**Prerequisites:** Python 3, Node.js and npm.
-
-The following commands assume `backend/` and `frontend/` are inside the project root. This README/media ZIP does **not** contain those application directories; obtain the runnable project separately.
-
-### Backend
-
-```powershell
-cd backend
-python -m pip install -r requirements.txt
-python -m uvicorn main:app --reload --port 8001
-```
-
-Backend: `http://localhost:8001`  
-FastAPI docs (if enabled): `http://localhost:8001/docs`
-
-### Frontend (new terminal, from project root)
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend (default): `http://localhost:5173` — use the address shown by Vite if it selects another port.
 
 ## Interface Theme
 
