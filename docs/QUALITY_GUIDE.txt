@@ -1,1 +1,0 @@
-GIFs are 1400 px wide with high quality palette and 5 fps. Original PNG screenshots remain unmodified. For pixel-perfect video, use original MP4 recordings. The original MP4 files are NOT included in this lightweight ZIP to avoid very large downloads; the README links to them must be removed or the MP4s uploaded separately.
