@@ -173,43 +173,6 @@ Review Related Cases / Coordinate
 Update Status / Resolve
 ```
 
-## Installation and Local Setup
-
-**Prerequisites:** Python 3, Node.js and npm.
-
-The following commands assume `backend/` and `frontend/` are inside the project root. This README/media ZIP does **not** contain those application directories; obtain the runnable project separately.
-
-### Backend
-
-```powershell
-cd backend
-python -m pip install -r requirements.txt
-python -m uvicorn main:app --reload --port 8001
-```
-
-Backend: `http://localhost:8001`  
-FastAPI docs (if enabled): `http://localhost:8001/docs`
-
-### Frontend (new terminal, from project root)
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend (default): `http://localhost:5173` — use the address shown by Vite if it selects another port.
-
-## Interface Theme
-
-| Element | Color |
-|---|---|
-| Dashboard background | Sage Grey `#9AAEAB` |
-| Text and icons | Deep Midnight Navy `#060927` |
-| Severity alert | Red `#C62828` |
-
-The design uses professional vector icons, consistent navigation and accessible information hierarchy. The precise font family for the requested vintage-style labels is not yet confirmed.
-
 ## Future Enhancements
 
 - Semantic issue similarity detection and explainable severity classification
