@@ -1,0 +1,5 @@
+AICTE GitHub README Package
+
+Upload README.md and the entire assets folder to the root of your GitHub repository.
+The docs folder is an extra copy of documentation.
+This package contains documentation and media only, not application source code.
