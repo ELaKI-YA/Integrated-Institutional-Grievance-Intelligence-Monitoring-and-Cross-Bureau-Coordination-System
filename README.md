@@ -1,149 +1,223 @@
 <div align="center">
-
-<img src="assets/banner.png" alt="AICTE Grievance Intelligence System" width="780" />
-
-<h1>Integrated Institutional Grievance Intelligence, Monitoring and Cross-Bureau Coordination System</h1>
-
-<p><strong>Smart India Hackathon 2026 · AICTE · Prototype</strong></p>
-<p><em>One institution. One connected grievance history. Better-informed coordination.</em></p>
-
+  <img src="assets/aicte-banner.png" alt="Every Case Deserves to Be Heard" width="100%" />
 </div>
 
-## ✦ The idea
-
-Institutional complaints are often easier to understand **together** than as isolated tickets. This proposed platform connects student grievances, institution identities, officer assignments, and bureau workflows in one institution-centric workspace.
-
-Complaints can be linked using an **AICTE Permanent ID**; official verification is a planned integration. Officers can explore complaint history, inspect potential duplicates, and review advisory coordination alerts across the **Regulation Bureau (RB)** and **Public Grievance Redressal Cell (PGRC)**.
-
-> **Project scope:** Educational SIH prototype, not an official AICTE service. AI suggestions require officer review and do not automatically merge, escalate, or resolve cases.
-
-## ✦ At a glance
-
-| Institution intelligence | Cross-bureau coordination | Human-in-the-loop AI |
-|:---|:---|:---|
-| One institution profile links cases, statuses, and officers. | Potential RB–PGRC overlap alerts highlight coordination needs. | Advisory category and related-case suggestions support officer review. |
-
-## ✦ Interactive architecture & application gallery
+# AICTE Integrated Institutional Grievance Intelligence, Monitoring & Cross-Bureau Coordination System
 
 <div align="center">
 
-<a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/" title="Explore the interactive architecture and screenshot gallery">
-  <img src="assets/system-architecture.png" alt="Open interactive architecture and animated application gallery" width="680" />
-</a>
+**Every Case Deserves to Be Heard**
 
+*Smart India Hackathon 2026 — Educational Prototype*
 
+**React · Vite · Python · FastAPI · SQLite**
 
 </div>
 
-<details>
-<summary><b>Architecture explanation</b></summary>
+## Overview
 
-<ol>
-<li><strong>Users:</strong> Students, officers, institutions, and administrators.</li>
-<li><strong>Frontend:</strong> React + Vite for forms, dashboards, case views, and graphs.</li>
-<li><strong>Backend:</strong> Python + FastAPI for endpoints and workflows.</li>
-<li><strong>Intelligence &amp; data:</strong> SQLite and rule-based complaint checks; SBERT and TF-IDF are proposed enhancements.</li>
-<li><strong>Outputs:</strong> Officer workspace, institution profiles, relationship graphs, reports, and alerts.</li>
-</ol>
+An educational prototype for submitting, monitoring, assigning and investigating institutional grievances. It combines a complaint management workflow with officer collaboration, historical reporting and an interactive connected-case relationship graph.
 
-</details>
+> This is an educational prototype, not an officially deployed AICTE service. Some capabilities described below are proposed enhancements and are not guaranteed to be implemented in the current source code.
 
-## ✦ Platform modules
+## Problem and Solution
 
-<details open>
-<summary><b>01 — Student grievance portal</b></summary>
+Institutional grievances about certificates, fees, salaries and approvals can be difficult to coordinate across offices. Similar issues from the same institution may be overlooked, and officers may lack a clear picture of related cases. This project aims to centralize grievance records, help officers investigate connections and support cross-bureau collaboration.
 
-Students select an institution, submit grievance details, and track case status.
+## Key Features
 
-</details>
+- **Complaint management:** Submit and track cases with institution, category, description and status information.
+- **Officer case workspace:** View incoming complaints, assign officers and review case information.
+- **AI-assisted case intelligence:** Organize complaint categories and identify potentially related institutional issues.
+- **Connected Case Graph:** Explore institutions, categories, complaints and officer relationships through circular nodes.
+- **Historical Complaint Reporting:** Filter and review records by year, month, category and status.
+- **Officer Chat:** Support investigation-related communication and coordination.
+- **Cross-bureau workflow:** Connect relevant officers and bureaus around cases.
 
-<details>
-<summary><b>02 — Officer dashboard & case workspace</b></summary>
+## Updated Interface Screenshots
 
-Authorized officers inspect cases, assignments, remarks, status changes, and action history.
+### Cases Dashboard
+Incoming grievances, institution names, complaint identifiers and current statuses.
 
-</details>
+![Cases Dashboard](assets/screenshots/cases-dashboard.png)
 
-<details>
-<summary><b>03 — Institution intelligence profile</b></summary>
+### Historical Complaint Reporting
+Year, month and category filters, complaint totals and reporting charts.
 
-Institution records connect complaint history, categories, bureau assignments, and officers.
+![Historical Complaint Reporting](assets/screenshots/historical-reporting.png)
 
-</details>
+### Connected Case Graph
+Relationship network of institutions, categories, individual complaints and officers, alongside an institution information panel.
 
-<details>
-<summary><b>04 — RB–PGRC coordination alerts</b></summary>
+![Connected Case Graph](assets/screenshots/connected-case-graph.png)
 
-Potentially overlapping active cases can be flagged for authorized officer review.
+## Animated Feature Demonstrations
 
-</details>
+### 1. Officer Private Chat
+![Officer Private Chat](assets/gifs/demo-01.gif)
 
-<details>
-<summary><b>05 — Relationship graph & reporting</b></summary>
+### 2. Case Details and AI Case Intelligence
+![Case Details and AI Intelligence](assets/gifs/demo-02.gif)
 
-Visual relationships link institutions, complaints, bureaus, and officers; reporting summarizes case history.
+### 3. Historical Complaint Reporting
+![Historical Complaint Reporting Demo](assets/gifs/demo-03.gif)
 
-</details>
+### 4. Connected Case Graph and Officer Workspace
+![Connected Case Graph Demo](assets/gifs/demo-04.gif)
 
-## ✦ AI-assisted intelligence
+### 5. Case Assignment and Officer Collaboration
+![Case Assignment Demo](assets/gifs/demo-05.gif)
 
-Current prototype screenshots show **rule-based category suggestions** and **potential duplicate detection**. The following NLP methods are **proposed enhancements**, not verified deployed models.
+### 6. Complaint Relationship Network
+![Complaint Relationship Network Demo](assets/gifs/demo-06.gif)
 
-| Model / method | Intended role |
-|:---|:---|
-| Sentence-BERT (`all-MiniLM-L6-v2`) | Semantic complaint embeddings |
-| TF-IDF | Keyword similarity baseline |
-| Cosine similarity | Similarity scoring |
-| Python rules | Institution, status, and bureau overlap checks |
-| SLA rules | Deadline monitoring |
+*GIFs are compressed recordings of the prototype interface. Some small text may be less readable in the animations.*
 
-```mermaid
-flowchart TD
-    A[New grievance] --> B[Check institution ID]
-    B --> C[Find related institution cases]
-    C --> D[Rule-based checks]
-    D --> E[Advisory related-case suggestion]
-    E --> F[Authorized officer review]
-    F --> G[Record action]
+## Connected Case Intelligence Graph
+
+The graph visualizes relationships between **institutions**, **complaint categories**, **individual grievances**, and **officers**. The proposed extended graph also links **students**, **dates**, and **AICTE bureaus** where permissions allow.
+
+| Node type | Color |
+|---|---|
+| Institution | `#123C60` |
+| Student | `#2D7668` |
+| Officer | `#486DAD` |
+| Complaint | `#6C559A` |
+| Submission date | `#A47732` |
+| Bureau | `#467D89` |
+| High-severity alert | `#C62828` |
+
+## Planned AI Severity Alert
+
+The intended severity rule is triggered when **more than five complaints** concern **the same institution and the same or a sufficiently similar issue**.
+
+1. A student submits a complaint through the complaint interface.
+2. The backend saves it as an independent case record.
+3. Similarity logic checks institution ID and issue similarity.
+4. On the **sixth matching complaint**, a high-severity alert is created.
+5. A **small blinking red circle** appears on the Officer Dashboard.
+6. Clicking the circle opens **Case Details** with all matching complaints.
+7. A connected graph panel slides in from the right, showing linked entities and cases.
+8. Acknowledging the alert stops blinking while preserving alert history.
+
+**Implementation status:** This end-to-end automatic workflow is a planned feature; verify it against the deployed application before claiming it is complete.
+
+## Officer Case Management and Chat
+
+Case details are designed to include case ID, institution, complaint description, category, submission date, status, assigned officer, bureau, related complaints, attachments and investigation history.
+
+The proposed officer communication workflow is:
+
+`Officer Dashboard → Case Details → Select Officer → Case-Linked Chat → Investigation Update`
+
+Planned chat capabilities include private messaging, cross-bureau coordination, case-linked conversations, timestamps, message history, notifications and authorized document sharing. Feature availability depends on the application build.
+
+## Historical Complaint Reporting
+
+The reporting interface summarizes saved complaints using **year**, **month**, **category**, and **status** views. Filters help officers explore grievance patterns over time. Counts shown in screenshots are demonstration data, not live institutional statistics.
+
+## Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React + Vite |
+| Styling | CSS |
+| Backend | Python + FastAPI |
+| Database | SQLite |
+| Communication | REST APIs |
+| Intelligence | Rule-based classification / similarity logic; advanced semantic matching proposed |
+| Visualization | Interactive relationship graph |
+
+## Architecture
+
+```text
+Student / Officer Interfaces
+           |
+       React + Vite
+           |
+         REST API
+           |
+      FastAPI Backend
+           |
+  +--------+---------+
+  |        |         |
+Cases  Intelligence  Officer Workspace
+  |        |         |
+  +--------+---------+
+           |
+       SQLite DB
+           |
+    Reports and Graph
 ```
 
-## ✦ Technology stack
+## Grievance Workflow
 
-| Layer | Technology | Purpose |
-|:---|:---|:---|
-| Frontend | React + Vite | Interactive web interface |
-| Backend | Python + FastAPI | REST endpoints and workflows |
-| Database | SQLite | Prototype records |
-| Current intelligence | Python rules | Advisory category and case checks |
-| Proposed NLP | Sentence Transformers, scikit-learn | Semantic and keyword similarity |
-| Access | Role-based permissions | Authorized workflows |
+```text
+Submit Complaint
+      ↓
+Save Case Record
+      ↓
+Classify / Check Similarity
+      ↓
+Officer Dashboard
+      ↓
+Assign and Investigate
+      ↓
+Review Related Cases / Coordinate
+      ↓
+Update Status / Resolve
+```
 
-## ✦ Demo journeys
+## Installation and Local Setup
 
-**Complaint to officer review:** Student submits a grievance → case is stored → related-case checks run → officer reviews and records actions.
+**Prerequisites:** Python 3, Node.js and npm.
 
-**Potential cross-bureau overlap:** Related RB and PGRC complaints → advisory flag → officer verification → documented coordination decision.
+The following commands assume `backend/` and `frontend/` are inside the project root. This README/media ZIP does **not** contain those application directories; obtain the runnable project separately.
 
-## ✦ Application screenshots
+### Backend
 
-<div align="center">
-<a href="https://elaki-ya.github.io/Integrated-Institutional-Grievance-Intelligence-Monitoring-and-Cross-Bureau-Coordination-System/#screenshots">
-<img src="assets/stacked-gallery-preview.png" alt="Application screenshot gallery" width="680" />
-</a>
-</div>
+```powershell
+cd backend
+python -m pip install -r requirements.txt
+python -m uvicorn main:app --reload --port 8001
+```
 
+Backend: `http://localhost:8001`  
+FastAPI docs (if enabled): `http://localhost:8001/docs`
 
-## ✦ Responsible use
+### Frontend (new terminal, from project root)
 
-Student grievances may contain sensitive personal information. Do not commit real complaints, credentials, or private institution records to a public repository. Use synthetic records and enforce permissions on the backend. AI suggestions are advisory and require human review.
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend (default): `http://localhost:5173` — use the address shown by Vite if it selects another port.
+
+## Interface Theme
+
+| Element | Color |
+|---|---|
+| Dashboard background | Sage Grey `#9AAEAB` |
+| Text and icons | Deep Midnight Navy `#060927` |
+| Severity alert | Red `#C62828` |
+
+The design uses professional vector icons, consistent navigation and accessible information hierarchy. The precise font family for the requested vintage-style labels is not yet confirmed.
+
+## Future Enhancements
+
+- Semantic issue similarity detection and explainable severity classification
+- Real-time notifications and persistent alert acknowledgment
+- Expanded student, officer, bureau and date relationship nodes
+- Richer case-linked officer chat and attachment management
+- Role-based access control and audit trails
+- Enhanced analytics and investigation summaries
+
+## Project Purpose
+
+Built as a **Smart India Hackathon 2026 educational prototype** to demonstrate a more transparent, coordinated and intelligence-assisted approach to institutional grievance redressal.
 
 ---
 
-<div align="center">
-
-<p><strong>AICTE GRIEVANCE INTELLIGENCE SYSTEM</strong></p>
-<p><em>Institutional visibility · Connected workflows · Responsible AI</em></p>
-
-<sub>Smart India Hackathon 2026 · Educational prototype · Not affiliated with or endorsed by AICTE</sub>
-
-</div>
+<div align="center"><strong>Every Case Deserves to Be Heard.</strong></div>
