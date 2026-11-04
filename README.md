@@ -57,19 +57,19 @@ Relationship network of institutions, categories, individual complaints and offi
 ![Officer Private Chat](assets/gifs/demo-01.gif)
 
 ### 2. Case Details and AI Case Intelligence
-![Case Details and AI Intelligence](assets/gifs/demo-02.gif)
+<img src="assets/gifs/demo-02.gif" alt="Case Details and AI Intelligence" width="100%" />
 
 ### 3. Historical Complaint Reporting
-![Historical Complaint Reporting Demo](assets/gifs/demo-03.gif)
+<img src="assets/gifs/demo-03.gif" alt="Historical Complaint Reporting Demo" width="100%" />
 
 ### 4. Connected Case Graph and Officer Workspace
-![Connected Case Graph Demo](assets/gifs/demo-04.gif)
+<img src="assets/gifs/demo-04.gif" alt="Connected Case Graph Demo" width="100%" />
 
 ### 5. Case Assignment and Officer Collaboration
-![Case Assignment Demo](assets/gifs/demo-05.gif)
+<img src="assets/gifs/demo-05.gif" alt="Case Assignment Demo" width="100%" />
 
 ### 6. Complaint Relationship Network
-![Complaint Relationship Network Demo](assets/gifs/demo-06.gif)
+<img src="assets/gifs/demo-06.gif" alt="Complaint Relationship Network Demo" width="100%" />
 
 *GIFs are compressed recordings of the prototype interface. Some small text may be less readable in the animations.*
 
